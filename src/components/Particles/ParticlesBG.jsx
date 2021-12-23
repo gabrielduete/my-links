@@ -18,7 +18,7 @@ function ParticlesBG() {
       options={{
         background: {
           color: {
-            value: "red",
+            value: "white",
           },
         },
         fpsLimit: 40,
@@ -52,10 +52,10 @@ function ParticlesBG() {
         },
         particles: {
           color: {
-            value: "#EC4040",
+            value: "#FF1300",
           },
           links: {
-            color: "#FF0000",
+            color: "#ffffff",
             distance: 150,
             enable: true,
             opacity: 0.5,
