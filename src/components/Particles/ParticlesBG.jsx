@@ -1,31 +1,31 @@
-import React from 'react'
-import Particles from 'react-tsparticles'
+import React from "react";
+import Particles from "react-tsparticles";
 
-function ParticlesBG(){
-    const particlesInit = (main) => {
-      console.log(main);  
-    }
-      
-    const particlesLoaded = (container) => {
-      console.log(container);
-    }
+function ParticlesBG() {
+  const particlesInit = (main) => {
+    console.log(main);
+  };
 
-    return(
-        <Particles
-            id="tsparticles"
-            init={particlesInit}
-            loaded={particlesLoaded}
-            options={{
-                background: {
-                color: {
-                    value: "white",
-                },
-            },
-            fpsLimit: 60,
-            interactivity: {
-            events: {
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
+
+  return (
+    <Particles
+      id="tsparticles"
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={{
+        background: {
+          color: {
+            value: "red",
+          },
+        },
+        fpsLimit: 40,
+        interactivity: {
+          events: {
             onClick: {
-              enable: true,
+              enable: false,
               mode: "push",
             },
             onHover: {
@@ -33,8 +33,8 @@ function ParticlesBG(){
               mode: "repulse",
             },
             resize: true,
-            },
-            modes: {
+          },
+          modes: {
             bubble: {
               distance: 400,
               duration: 2,
@@ -52,10 +52,10 @@ function ParticlesBG(){
         },
         particles: {
           color: {
-            value: "#ffffff",
+            value: "#EC4040",
           },
           links: {
-            color: "#ffffff",
+            color: "#FF0000",
             distance: 150,
             enable: true,
             opacity: 0.5,
@@ -91,8 +91,9 @@ function ParticlesBG(){
           },
         },
         detectRetina: true,
-      }}/>
-    )
+      }}
+    />
+  );
 }
 
-export default ParticlesBG
+export default ParticlesBG;
