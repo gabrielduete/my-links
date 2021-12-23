@@ -1,5 +1,5 @@
-import { keyframes, createGlobalStyle } from 'styled-components';
-import styled from 'styled-components';
+import { keyframes, createGlobalStyle } from "styled-components"
+import styled from "styled-components"
 
 // Global Settings
 export const GlobalStyle = createGlobalStyle`
@@ -43,7 +43,7 @@ export const GlobalStyle = createGlobalStyle`
             backgroundSize: "10px"
         },
     }
-`
+`;
 
 // Animations
 const apeach = keyframes`
@@ -58,99 +58,101 @@ const apeach = keyframes`
 
 // Container
 export const WrapperAll = styled.div`
-  animation: ${apeach} 3s linear;
+  animation: ${apeach} 1.5s linear;
 `
 
 export const Wrapper = styled.section`
-    width: 100%;
-    margin: 10% 0%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    @media (max-width: 900px){
-        margin: 20% 0%;
-    }
+  width: 100%;
+  margin: 10% 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 900px) {
+    margin: 20% 0%;
+  }
 `
+
 // Header
 export const HeaderBG = styled.header`
-    animation: ${apeach} 3s linear;
-    width: auto;
+  animation: ${apeach} 1.5s linear;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div:nth-child(1) {
+    width: 20%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    div:nth-child(1){
-        width: 20%;
-        display: flex;
-        align-items: flex-end;
-    }
-    div:nth-child(2){
-        display: flex;
-        flex-direction: column;
-        align-itens: flex-start;
-        justify-content: flex-start;
-        margin-left: 2%;
-    }
-    div{
-        margin-bottom: 3%;
-    }
-    span{
-        font-size: 0.90em;
-        align-self: flex-end;
-        color: #BFB8B8;
-    }
+    align-items: flex-end;
+  }
+  div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-itens: flex-start;
+    justify-content: flex-start;
+    margin-left: 2%;
+  }
+  div {
+    margin-bottom: 3%;
+  }
+  span {
+    font-size: 0.9em;
+    align-self: flex-end;
+    color: #bfb8b8;
+  }  
 `
 
 export const Image = styled.img`
-    width: 100%;
-    border-radius: 50%;
+  width: 100%;
+  border-radius: 50%;
 `
 
 export const Title = styled.h1`
-    font-size: 1.8em;
-    text-align: center;
+  font-size: 1.8em;
+  text-align: center;
 `
 
 // Main - Links
 export const WrapperButtonsBG = styled.main`
-    animation: ${apeach} 3s linear;
-    width: 250px;
-    height: 250px;
-    border-radius: 2px;
-    overflow: auto;
-    padding: 10px 20px;
-    border: 2px solid white;
-    &::-webkit-scrollbar{
-        background: #2B2929;
-        width: 4px;
-    }
-    &::-webkit-scrollbar-thumb {
-        background-color: #BFB8B8;
-    }
+  animation: ${apeach} 1.5s linear;
+  width: 250px;
+  height: 250px;
+  border-radius: 2px;
+  overflow: auto;
+  padding: 10px 20px;
+  border: 2px solid white;
+  &::-webkit-scrollbar {
+    background: #2b2929;
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #bfb8b8;
+  }  
 `
 
 export const Link = styled.div`
-    width: 100%;
-    height: 40px;
-    cursor: pointer;
-    background: #606060;
-    border: none;
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 10px 0px;
-    outline: none;
-    transition-duration: 0.60s;
-    position: relative;
-    &:hover{
-            background: white;
-            p, i{
-                color: #606060;
-            }
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  background: #606060;
+  border: none;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 0px;
+  outline: none;
+  transition-duration: 0.6s;
+  position: relative;
+  &:hover {
+    background: white;
+    p,
+    i {
+      color: #606060;
     }
-    i{
-        position: absolute;
-        left: 5%
-    }
+  }
+  i {
+    position: absolute;
+    left: 5%;
+  }
 `

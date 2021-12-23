@@ -1,13 +1,13 @@
-import React from "react";
-import Particles from "react-tsparticles";
+import React from "react"
+import Particles from "react-tsparticles"
 
 function ParticlesBG() {
   const particlesInit = (main) => {
-    console.log(main);
+    console.log(main)
   };
 
   const particlesLoaded = (container) => {
-    console.log(container);
+    console.log(container)
   };
 
   return (
@@ -93,7 +93,7 @@ function ParticlesBG() {
         detectRetina: true,
       }}
     />
-  );
+  )
 }
 
-export default ParticlesBG;
+export default ParticlesBG
