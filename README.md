@@ -8,12 +8,15 @@
 ## Preview
 
 - Desktop
+
   <img src = 'printsReadme/print_1.png'/>
 
 - Tablet
+
   <img src = 'printsReadme/print_2.png'/>
 
 - Cell
+
   <img src = 'printsReadme/print_3.png'/>
 
 ## Motivation
